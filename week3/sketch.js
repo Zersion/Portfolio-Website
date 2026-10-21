@@ -74,7 +74,7 @@ let wings = {
 
 async function setup() {
   // WEBGL is needed to wrap a texture onto the face triangles
-  createCanvas(1280, 960, WEBGL);
+  createCanvas(960, 720, WEBGL);
 
   // Turn off depth testing so layers simply stack in drawing order
   // (everything here is flat, so we don't need 3D depth sorting)
@@ -92,7 +92,7 @@ async function setup() {
   // Webcam, mirrored like a selfie; the HTML video element is hidden
   // because we draw the video onto the canvas ourselves
   video = createCapture(VIDEO, { flipped: true });
-  video.size(640, 480);
+  video.size(960, 720);
   video.hide();
 
   // Face mesh structure (fixed, only needed once)
