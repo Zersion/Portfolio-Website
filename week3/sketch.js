@@ -74,7 +74,7 @@ let wings = {
 
 async function setup() {
   // WEBGL is needed to wrap a texture onto the face triangles
-  createCanvas(640, 480, WEBGL);
+  createCanvas(1280, 960, WEBGL);
 
   // Turn off depth testing so layers simply stack in drawing order
   // (everything here is flat, so we don't need 3D depth sorting)
