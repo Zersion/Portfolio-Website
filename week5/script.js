@@ -21,7 +21,7 @@ function generateMeme() {
             memeText.textContent = data[0];
         });
 
-    fetch("https://api.datamuse.com/words?ml=ecstatic")
+    fetch("https://api.datamuse.com/words?ml=dream")
         .then(response => response.json())
         .then(data => {
             console.log(data);
