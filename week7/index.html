@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ml5 Doodle Recognition</title>
+  <!-- 引入 p5.js 和 ml5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Week 7: Recap</h1>
+    </header>
+  <h1>✏️ Doodle Recognition</h1>
+  <p>Draw a simple doodle (like a cat, house, or apple) in the box below.</p>
+  <p>Wait for the model to load, then click "Recognize" after you finish.</p>
+  
+  <div id="canvas-container"></div>
+  
+  <div style="display: flex; gap: 10px;">
+    <button id="clearBtn">Clear Canvas</button>
+    <button id="classifyBtn" disabled>Recognize Doodle</button>
+  </div>
+
+  <div id="result-container">
+    <div id="status-msg">Loading model... please wait.</div>
+  </div>
+
+
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="../index.html">[ RETURN HOME ]</a>
+    <a href="../week9/index.html">[ PREVIOUS WEEK ]</a>
+  </nav>
+
+  <footer>
+    <p>Code as Nature · Fall 2026</p>
+  </footer>
+  
+  <script src="sketch.js"></script>
+</body>
+</html>
